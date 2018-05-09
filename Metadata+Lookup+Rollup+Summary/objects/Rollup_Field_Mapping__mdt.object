@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Field_to_Aggregate__c</fullName>
+        <description>The field to aggregate in child object</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The field to aggregate in child object</inlineHelpText>
+        <label>Field to Aggregate</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operation__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The aggregate operation to be done i.e. SUM, AVG, COUNT, MIN/MAX</inlineHelpText>
+        <label>Operation</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SUM</fullName>
+                    <default>true</default>
+                    <label>SUM</label>
+                </value>
+                <value>
+                    <fullName>AVG</fullName>
+                    <default>false</default>
+                    <label>AVG</label>
+                </value>
+                <value>
+                    <fullName>COUNT</fullName>
+                    <default>false</default>
+                    <label>COUNT</label>
+                </value>
+                <value>
+                    <fullName>MIN</fullName>
+                    <default>false</default>
+                    <label>MIN</label>
+                </value>
+                <value>
+                    <fullName>MAX</fullName>
+                    <default>false</default>
+                    <label>MAX</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Parent_Field_to_store_aggregate_value__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The field to which aggregated value will be saved in master/parent object</inlineHelpText>
+        <label>Parent Field to store aggregate value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rollup_Object_Mapping__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Rollup Object Mapping</label>
+        <referenceTo>Rollup_Object_Mapping__mdt</referenceTo>
+        <relationshipLabel>Rollup Field Mappings</relationshipLabel>
+        <relationshipName>Rollup_Field_Mappings</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>Rollup Field Mapping</label>
+    <pluralLabel>Rollup Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

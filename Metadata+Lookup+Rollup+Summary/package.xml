@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metadata Lookup Rollup Summary</fullName>
+    <types>
+        <members>LREngine</members>
+        <members>RollupServices</members>
+        <members>TestLREngine</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Rollup_Field_Mapping__mdt.Field_to_Aggregate__c</members>
+        <members>Rollup_Field_Mapping__mdt.Operation__c</members>
+        <members>Rollup_Field_Mapping__mdt.Parent_Field_to_store_aggregate_value__c</members>
+        <members>Rollup_Field_Mapping__mdt.Rollup_Object_Mapping__c</members>
+        <members>Rollup_Object_Mapping__mdt.Child_Object_Name__c</members>
+        <members>Rollup_Object_Mapping__mdt.Lookup_Relationship_Field_API_Name__c</members>
+        <members>Rollup_Object_Mapping__mdt.Parent_Object_Name__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Rollup_Field_Mapping__mdt</members>
+        <members>Rollup_Object_Mapping__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Rollup_Field_Mapping__mdt-Rollup Field Mapping Layout</members>
+        <members>Rollup_Object_Mapping__mdt-Rollup Object Mapping Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>41.0</version>
+</Package>
